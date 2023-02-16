@@ -1,4 +1,5 @@
 function ucFirst(str) {
+
   if (str.trim() == ''){
     return str;
   }
@@ -7,4 +8,3 @@ function ucFirst(str) {
     return result;
   }
 }
-
