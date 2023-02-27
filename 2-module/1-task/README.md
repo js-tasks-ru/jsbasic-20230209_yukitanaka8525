@@ -15,7 +15,20 @@ let salaries = {
 Напишите функцию для суммирования всех зарплат. Должно получиться 3900.
 
 ```js
-sumSalary(salaries); // 3900
+sumSalary(salaries){
+  let sum = 0;
+  for (let salary of Object.values(salaries)) {
+    if(typeof(!isNaN(parseFloat(nObject.values(salaries))))){
+      sum += salary;
+    }
+    else{
+      return false;
+    }
+  }
+}
+
+  return sum;
+}; // 3900
 ```
 
 Обратите внимание, что помимо зарплат, в объекте хранится дополнительная информация:
