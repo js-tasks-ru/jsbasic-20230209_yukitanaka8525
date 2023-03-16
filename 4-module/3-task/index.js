@@ -1,4 +1,5 @@
 function highlight(table) {
+
   for (let tr of table.children[1].rows) { 
       let available = tr.cells[3];
       if (available.hasAttribute("data-available"))
@@ -25,5 +26,3 @@ function highlight(table) {
   }
 }
 
-let table = document.querySelector(".js-teachers");
-highlight(table);
